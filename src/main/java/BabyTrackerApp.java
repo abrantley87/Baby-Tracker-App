@@ -19,12 +19,15 @@ public class BabyTrackerApp {
                     int bathroomChoice = userInterface.printBathroomSubMenu();
                     if (bathroomChoice == 1) {
                         entries.add(userInterface.urineEntry());
+                        userInterface.printMessage("Entry added.");
                     }
                     if (bathroomChoice == 2) {
                         entries.add(userInterface.bowelMovementEntry());
+                        userInterface.printMessage("Entry added.");
                     }
                     if (bathroomChoice == 3) {
                         entries.add(userInterface.bathroomAttemptEntry());
+                        userInterface.printMessage("Entry added.");
                     }
                     if (bathroomChoice == 4) {
                         break;
@@ -38,12 +41,16 @@ public class BabyTrackerApp {
                         int foodChoice = userInterface.printFoodSubMenu();
                         if (foodChoice == 1) {
                             entries.add(userInterface.bottleFeedingEntry());
+                            userInterface.printMessage("Entry added.");
                         }
                         if (foodChoice == 2) {
                             entries.add(userInterface.foodEntry());
+                            userInterface.printMessage("Entry added.");
                         }
                         if (foodChoice == 3) {
                             entries.add(userInterface.liquidEntry());
+                            userInterface.printMessage("Entry added.");
+
                         }
                         if (foodChoice == 4) {
                             break;
@@ -58,9 +65,13 @@ public class BabyTrackerApp {
                     LocalTime timeHolder = null;
                     if (sleepChoice == 1) {
                         entries.add(userInterface.fellAsleepEntry());
+                        userInterface.printMessage("Entry added.");
+
                     }
                     if (sleepChoice == 2) {
                         entries.add(userInterface.awakeFromSleepEntry());
+                        userInterface.printMessage("Entry added.");
+
                     }
                     if (sleepChoice == 3) {
                         break;
